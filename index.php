@@ -5,10 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>google questions</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
+<!-- header -->
+<div>
 
-<h1>vamos</h1>
-    
+</div>
+<!-- TUTTE LE DOMANDE -->
+<div class="col-9 mx-auto mt-5">
+
+<?php 
+// inseriamo un array contenente tutte le domande
+?>
+
+</div>
+
 </body>
 </html>
