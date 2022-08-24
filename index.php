@@ -14,7 +14,7 @@
 
 </div>
 <!-- TUTTE LE DOMANDE -->
-<div class="col-9 mx-auto mt-5">
+<div class="col-7 mx-auto mt-5">
 
 <?php 
 // inseriamo un array contenente tutte le domande
@@ -87,7 +87,12 @@
     ]
 ?>
 
-<?php var_dump($questionsAndAnswers); ?>
+<?php foreach ($questionsAndAnswers as $question => $answer) { ?>
+    <h4> <?php echo $question; ?></h4>
+    <?php foreach ($answer as $eachAnswer){ ?>
+        <p> <?php echo $eachAnswer; ?> </p>
+    <?php }?>
+<?php }?>
 
 </div>
 
