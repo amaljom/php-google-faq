@@ -7,14 +7,31 @@
     <title>google questions</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<!-- header -->
-<div>
-
+<div class="fixed-top fixed-header">
+    <div class="p-4 d-flex justify-content-between">
+        <div class="img_google">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png" alt="NONT TROVATO">
+        </div>
+        <div class="img_profile">
+            <img class="w-100" src="https://freesvg.org/img/circle-15.png" alt="NON TROVATO">
+        </div>
+    </div>
+    <div class="border-bottom">
+        <ul class="lista">
+            <li>Introduzione</li>
+            <li>Norme sulla privacy</li>
+            <li>Termini di servizio</li>
+            <li>Tecnologie</li>
+            <li class="border-bottom border-primary">Domande frequenti</li>
+        </ul>
+    </div>
 </div>
+
 <!-- TUTTE LE DOMANDE -->
-<div class="col-7 mx-auto mt-5">
+<div class="col-7 mx-auto body-container">
 
 <?php 
 // inseriamo un array contenente tutte le domande
@@ -103,7 +120,7 @@
 ?>
 
 <?php foreach ($questionsAndAnswers as $question => $answer) { ?>
-    <h4> <?php echo $question; ?></h4>
+    <h4 class="pt-5"> <?php echo $question; ?></h4>
     <?php foreach ($answer as $eachAnswer){ ?>
         <p > <?php echo $eachAnswer; ?> </p>
     <?php }?>

@@ -1,0 +1,27 @@
+ul li{
+    list-style: none;
+    display: inline;
+    font-size: 1.2rem;
+    padding: 0 15px;
+    padding-bottom:15px;
+}
+ul{
+    margin: 0;
+    padding-bottom:15px ;
+}
+.img_google{
+    width: 150px;
+}
+.img_google img{
+    width: 100%;
+}
+.img_profile{
+    width: 50px;
+}
+.body-container{
+    margin-top: 200px;
+}
+.fixed-header{
+    background-color: white;
+    z-index: 2;
+}
